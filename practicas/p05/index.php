@@ -79,6 +79,24 @@
         print_r($z);
         echo "<br>";
 
+        echo "<h2>Ejercicio 4</h2>";
+        echo "<br>";
+
+        function datos(){
+            global $a, $b, $c, $z;
+            echo $a;
+            echo "<br>";
+            print_r($z);
+            echo "<br>";
+            echo $b;
+            echo "<br>";
+            echo $c;
+        }
+
+        datos();
+        echo "<br>";
+
+        
 
 
 
