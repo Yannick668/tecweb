@@ -17,6 +17,11 @@
         $var7;
         $_element1;
         //$house*5;     // Invalida
+
+        function destroy(){
+            global $a, $b, $c, $d;
+            unset( $a, $b, $c, $d );
+        }
         
         echo '<h4>Respuesta:</h4>';   
     
@@ -53,6 +58,7 @@
         echo '<br>';
         echo '<p>Aqui podemos ver que a pesar de asignarle un nuevo valor a las variables a y b, respeta lo que estaba antes escrito y solo modifica el valor en la segunda instancia</p>';
         echo '<br>';
+        destroy();
 
         echo '<h2>Ejercicio 3</h2>';
         echo '<br>';
@@ -78,6 +84,7 @@
         $z[0] = "MySQL";
         print_r($z);
         echo "<br>";
+        destroy();
 
         echo "<h2>Ejercicio 4</h2>";
         echo "<br>";
@@ -95,9 +102,62 @@
 
         datos();
         echo "<br>";
+        destroy();
 
+        echo "<h2>Ejercicio 5</h2>";
+
+
+        $p = "7 personas";
+        $q = (integer) $a;
+        $p = "9E3";
+        $r = (double) $a;
         
+        echo $p;
+        echo "<br>";
+        echo $q;
+        echo "<br>";
+        echo $r;
+        echo "<br>";
+        destroy();
 
+        echo "<h2>Ejercico 6</h2>";
+        echo "<br>";
+
+        $a = "0";
+        $b = "TRUE";
+        $c = false;
+        $d = ($a OR $b);
+        $e = ($a AND $c);
+        $f = ($a XOR $b);
+
+        var_dump($a);
+        echo "<br>";
+        var_dump($b);
+        echo "<br>";
+        var_dump($c);
+        echo "<br>";
+        var_dump($d);
+        echo "<br>";
+        var_dump($e);
+        echo "<br>";
+        var_dump($f);
+        echo "<br>";
+        echo "<br>";
+        
+        $bool_c = var_export($c,true);
+        $bool_e = var_export($e,true);
+        echo $bool_c;
+        echo "<br>";
+        echo $bool_e;
+        echo "<br>";
+        destroy();
+
+        echo "<h2>Ejercicio 7</h2>";
+        echo "<br>";
+
+        echo $_SERVER['SERVER_SOFTWARE'];
+        echo '<br>';
+        echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 
 
 
