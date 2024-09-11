@@ -52,6 +52,36 @@
         echo $b;
         echo '<br>';
         echo '<p>Aqui podemos ver que a pesar de asignarle un nuevo valor a las variables a y b, respeta lo que estaba antes escrito y solo modifica el valor en la segunda instancia</p>';
+        echo '<br>';
+
+        echo '<h2>Ejercicio 3</h2>';
+        echo '<br>';
+
+        $a = "PHP5";
+        echo $a;
+        echo "<br>";
+        $z[] = &$a;
+        print_r($z);
+        echo "<br>";
+        $b = "5a version de PHP";
+        echo $b;
+        echo "<br>";
+        $c = $b*10;
+        echo $c;
+        echo "<br>";
+        $a .= $b;
+        echo $a;
+        echo "<br>";
+        $b *= $c;
+        echo $b;
+        echo "<br>";
+        $z[0] = "MySQL";
+        print_r($z);
+        echo "<br>";
+
+
+
+
 
 
 
