@@ -30,8 +30,32 @@
         echo '<li>$house*5 es inválida porque el símbolo * no está permitido.</li>';
         echo '</ul>';
         echo '<br>';
+        echo '<h2>Ejercicio 2</h2>';
+        echo '<br>';
+        
+        $a = "ManejadorSQL";
+        $b = 'MySQL';
+        $c = &$a;
+        
+        echo $a;
+        echo '<br>';
+        echo $b;
+        echo '<br>';
+        echo $c;
+        echo '<br>';
+        
+        $a = "PHP server";
+        $b = &$a;
+        
+        echo $a;
+        echo '<br>';
+        echo $b;
+        echo '<br>';
+        echo '<p>Aqui podemos ver que a pesar de asignarle un nuevo valor a las variables a y b, respeta lo que estaba antes escrito y solo modifica el valor en la segunda instancia</p>';
 
-     
-    ?>
+
+
+
+        ?>
 </body>
 </html>
