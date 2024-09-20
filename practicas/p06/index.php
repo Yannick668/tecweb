@@ -41,7 +41,7 @@
     <h2>Ejercico 2</h2>
     <?php
     $_flag=false;
-    $i=1;
+    $i=0;
     while ($_flag==false){
         $a=rand(min: 1,max: 100);
         $b=rand(min: 1,max: 100);
